@@ -1,0 +1,67 @@
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  width: 320px;
+  padding: 16px;
+  background: #0f172a;
+  color: #f8fafc;
+  margin: 0;
+}
+.header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #38bdf8;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.form-group {
+  margin-bottom: 12px;
+}
+label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+input {
+  width: 100%;
+  padding: 8px 10px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: white;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+  outline: none;
+}
+input:focus {
+  border-color: #38bdf8;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background: #38bdf8;
+  color: #0f172a;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 12px;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #7dd3fc;
+}
+button:disabled {
+  background: #475569;
+  cursor: not-allowed;
+  color: #94a3b8;
+}
+#status {
+  margin-top: 12px;
+  font-size: 12px;
+  text-align: center;
+}
