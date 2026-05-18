@@ -1,36 +1,44 @@
-# 🎯 Job Command Center
+# 📊 Job Command Center: Market Intelligence Data Platform
 
-A high-performance, full-stack career management and tracking platform built to optimize the job search process through data-driven insights, automated outreach, and intelligent pipeline management. 
+An end-to-end data pipeline, central repository, and analytics dashboard built on **PostgreSQL** to automate job market intelligence, specifically tailored for analyzing hiring patterns in the **Banking and Financial Crime** sectors.
 
-## 🚀 The Problem it Solves
-The modern job search is a data problem. Tracking hundreds of applications, recruiter contacts, and interview stages across various platforms leads to scattered data and missed opportunities. 
+## 🚀 The Data Challenge
+The modern job search presents a classic data fragmentation problem: highly unstructured data is scattered across multiple siloed platforms (LinkedIn, specialized banking portals, recruiter emails). Tracking this manually leads to dirty data, duplicate records, and missed analytical insights regarding hiring trends.
 
-**Job Command Center** solves this by acting as a centralized, personal CRM. It deduplicates application data, manages a direct-outreach pipeline to recruiters, and leverages intelligence layers to map out company hierarchies and optimize conversion rates.
+## 🛠️ The Solution
+I architected this platform to serve as a personal **Data Warehouse and automated ETL pipeline**. It ingests unstructured web data, cleanses it, models it relationally, and serves it to a reporting dashboard.
 
-## 💻 Tech Stack
-- **Frontend Framework:** [Next.js 16](https://nextjs.org/) & React 19
-- **Backend & Database:** [Supabase](https://supabase.com/) (PostgreSQL & Auth)
-- **Data Parsing:** Cheerio (for web scraping/parsing)
-- **Styling:** Custom CSS & [Lucide React](https://lucide.dev/) (Icons)
-- **Date Management:** date-fns
+## ⚙️ Data Engineering Architecture & Tech Stack
 
-## ✨ Key Features
-- **Recruiter CRM:** Dedicated tracking for recruiter communications, outreach status, and contact prioritization.
-- **Application Deduplication:** Intelligent merging of job postings to prevent duplicate applications across different job boards.
-- **Data-Driven Dashboard:** Visualizing application pipelines, conversion rates, and action items in real-time.
-- **Chrome Extension Integration:** Seamlessly clip job postings and company data directly from the browser into the Supabase backend.
-- **Knowledge Graphs & Patterns:** Mapping out specific sector hiring trends (e.g., UK financial crime sector).
+- **Core Database:** PostgreSQL (via [Supabase](https://supabase.com/)) 
+- **Data Ingestion/Extraction:** Custom Chrome Extension & Cheerio (DOM Scraping)
+- **API & Compute:** Next.js 16 (Serverless API Routes)
+- **Analytics & Visualization:** React 19 / Custom CSS Dashboards
 
-## 🛠️ Getting Started
+## 🧠 Key Data Engineering Highlights
 
-First, run the development server:
+### 1. Automated Data Ingestion (ETL)
+Built a custom Chrome Extension that acts as an edge ingestion layer. It extracts unstructured job specifications and recruiter data directly from the browser DOM, transforms it into structured JSON payloads, and loads it securely into the backend via REST APIs.
+
+### 2. Relational Data Modeling
+Designed a highly normalized PostgreSQL schema to efficiently manage complex relationships. The data model seamlessly connects `Companies`, `Recruiters`, `Job Postings`, and `Application Statuses` while maintaining strict referential integrity.
+
+### 3. Data Cleansing & Deduplication
+Implemented intelligent application deduplication logic at the API layer. The system merges overlapping job postings from different broker platforms to maintain a single source of truth and ensure clean reporting data.
+
+### 4. Real-Time Analytics & Reporting
+Developed a business intelligence dashboard that queries the PostgreSQL database to visualize pipeline conversion rates, track recruiter interaction frequency, and map out emerging hiring patterns within the UK Financial/Banking space.
+
+## 💻 Getting Started
+
+First, run the development server to spin up the analytics dashboard:
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the data visualizations.
 
 ---
-*Built as a showcase of full-stack engineering, system design, and product thinking.*
+*Built to showcase end-to-end data engineering, database architecture, and pipeline automation.*
