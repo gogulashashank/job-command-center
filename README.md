@@ -29,7 +29,26 @@ Implemented intelligent application deduplication logic at the API layer. The sy
 ### 4. Real-Time Analytics & Reporting
 Developed a business intelligence dashboard that queries the PostgreSQL database to visualize pipeline conversion rates, track recruiter interaction frequency, and map out emerging hiring patterns within the UK Financial/Banking space.
 
-## 💻 Getting Started
+## 💻 # Hi there, I'm Shashank! 👋
+
+### 📊 Aspiring Data Engineer | UK Financial Sector
+
+I am an ambitious student and data enthusiast focused on building robust data pipelines, database architectures, and automation tools. I am actively looking for **Data Engineering** opportunities in the **UK Market**, particularly within the Banking and Financial Crime sectors.
+
+## 🛠️ Technical Arsenal
+- **Databases & Modeling:** PostgreSQL, SQL, Relational Design
+- **Data Engineering:** ETL Pipelines, Web Scraping (Cheerio), API Integrations
+- **Languages & Frameworks:** Python, JavaScript, Next.js, React
+- **Tools:** Git, Supabase, REST APIs
+
+## 🚀 Featured Project
+**[Job Command Center](link-to-your-repo)** 
+An end-to-end data integration platform I built to automate my UK job search. Features a custom edge-ingestion Chrome Extension, data deduplication logic, and a normalized PostgreSQL database to track hiring patterns.
+
+## 📫 Let's Connect!
+- **LinkedIn:** [Your LinkedIn URL]
+- **Email:** [Your Email]
+
 
 First, run the development server to spin up the analytics dashboard:
 
